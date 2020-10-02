@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' herf='stylesforform.css'/>
+<title>테스트 </title>
+</head>
+<body>
+    <header class='form-header'>
+        <h1>회원가입</h1>
+        <p>계정이 없다면 회원가입하세요</p>
+    </header>
+
+    <form class='form-row'>
+        <div>
+            <lable for='full-name'>자녀 이름</lable>
+            <input id='full-name' name='full-name' type='text'/>
+        </div>
+        <div>
+            <label for='email'>아이디</lable>
+            <input id='email'
+            name='email'
+            type='email'
+            placeholder='@goodeye.com을 이용하세요.'/>
+            </div>
+            <div>
+                <label for='password'>비밀번호</label>
+                <input id='password'
+                name='password'
+                type='password'
+                placeholder='4자리 숫자 비밀번호를 만드세요.'>
+            </div>
+        <div class='month-form-row'>
+            <lable for='birth_month'>자녀 생년월일</lable>
+            <select name="월">
+                <option value="january">1월</option>
+                <option value="february">2월</option>
+                <option value="march">3월</option>
+                <option value="april">4월</option>
+                <option value="may">5월</option>
+                <option value="june">6월</option>
+                <option value="july">7월</option>
+                <option value="august">8월</option>
+                <option value="september">9월</option>
+                <option value="october">10월</option>
+                <option value="november">11월</option>
+                <option value="december">12월</option>
+            </select>
+            <input type='text' id='birth_month'>
+        </div>
+        <div>
+            <fieldset class='legacy-form-row'>
+             <input id='gender-type-1'
+             name='gender-type'
+              type='radio'
+              value='Male'/>
+              <label for='gender-type-1' class='radio-label'>남자</label>
+                <input id='gender-type-2'
+                name='gender-type'
+                type='radio'
+                value='Female'
+                checked />
+            <label for='gender-type-1' class='radio-label'>여자</label>
+                <input id='gender-type-3'
+                name='gender-type'
+                type='radio'
+                value='No-binary'
+                checked />
+            <label for='gender-type-1' class='radio-label'>비공개</label>
+            </fieldset>
+        </div>
+        <div>
+            <label class='checkbox-label' for='available'>
+                <input id='available'
+                name='available'
+                type='checkbox'
+                value='is-available'/>
+                <span>나는 로봇이 아닙니다</span>
+        </label>
+        </div>
+        <div>
+            <button>회원가입</button>
+        </div>
+    </form>
+</body>
+</html>
